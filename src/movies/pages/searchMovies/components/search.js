@@ -7,7 +7,7 @@ const inputSearchMovies = (props) => {
     <Row>
       <Col span={12} offset={6}>
         <Search
-          placeholder="nhập tên phim"
+          placeholder="Nhập tên phim cần review"
           enterButton="search"
           size="large"
           loading={props.loading}

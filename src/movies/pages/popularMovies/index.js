@@ -4,6 +4,7 @@ import BreadcrumbMovies from "../../components/BreadcrumbMovies";
 import { helper } from "../../helpers/common";
 import { api } from "../../services/api";
 import ListMovie from "../../pages/popularMovies/components/ListMovies";
+import SearchMoviesPage from "../searchMovies"
 import { Skeleton, Pagination } from "antd";
 const PopularMovies = () => {
   const [loading, setLoading] = React.useState(false);
@@ -39,6 +40,7 @@ const PopularMovies = () => {
     <LayoutMovies>
       <BreadcrumbMovies item_lv1="App" item_lv2="Movies" item_lv3="Popular" />
       <div className="site-layout-content">
+        <SearchMoviesPage/>
         <ListMovie movies={dataFilm} />
         <Pagination
           style={{ textAlign: "center" }}
