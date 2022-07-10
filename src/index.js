@@ -17,7 +17,7 @@ import reportWebVitals from "./reportWebVitals";
 const Title = () => {
   // This effect runs once, after the first render
   React.useEffect(() => {
-    document.title = "Shop Pet Đà Nẵng ";
+    document.title = "Review movies";
   }, []);
 
   return null;
